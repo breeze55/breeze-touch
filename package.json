@@ -1,0 +1,22 @@
+{
+  "name": "breeze-touch",
+  "version": "0.0.0",
+  "description": "This is a mobile touch plug-in based on native JavaScript developed.",
+  "main": "dist/breeze-touch-0.0.0.min.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breeze55/breeze-touch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breeze55/breeze-touch/issues"
+  },
+  "homepage": "https://github.com/breeze55"
+}

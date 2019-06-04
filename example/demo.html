@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title></title>
+	<style>
+		html, body, p {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+	</style>
+<script type="text/javascript" src="../dist/breeze-touch-0.0.0.min.js"></script></head>
+<body>
+	<script>
+		var str = '';
+		var k = 0;
+		var content = document.createElement('div');
+		for (var i = 0; i < 100; i++) {
+			str += '<p>第' + i + '行测试文案</p>';
+		}
+		content.innerHTML = str;
+		content.id = 'box';
+		document.body.appendChild(content);
+	</script>
+	<script>
+		var boxHeight = document.getElementById('box').clientHeight;
+		var windowHeight = window.innerHeight;
+		var slideDistance = boxHeight - windowHeight;
+		breezeTouch({
+			pickerSlide: box,
+			slideDistance: slideDistance
+		});
+	</script>
+</body>
+</html>
